@@ -43,7 +43,7 @@ function loadInfo() {
   var freeProgramSpace = document.getElementById("freeProgramSpace");
   var freeMemory = document.getElementById("freeMemory");
 
-  fetch(`config.json`)
+  fetch(`./config/config.json`)
     .then((response) => {
       return response.json();
     })
@@ -87,7 +87,6 @@ function loadInfo() {
         if (window.location.pathname === "/information.html") {
           version.innerHTML = `${item.device.version}`;
           build.innerHTML = `${item.device.build}`;
-          // uptime.innerHTML = `${item.device.uptime}`;
           bootCount.innerHTML = `${item.device.bootCount}`;
           restartReason.innerHTML = `${item.device.restartReason}`;
           friendlyName.innerHTML = `${item.device.name}`;
@@ -377,7 +376,7 @@ function updateTime() {
 
 // NOTE: update temperature -> call ajaxLoad function
 function updateTemp() {
-  ajaxLoad("temp.csv");
+  ajaxLoad("./config/temp.csv");
 }
 
 // NOTE: set temp values

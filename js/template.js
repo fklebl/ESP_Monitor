@@ -90,7 +90,7 @@ function loadJson() {
             })
         };
     };
-    xhr.open('GET', 'esp8266.json', true);
+    xhr.open('GET', './config/esp8266.json', true);
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.send(null);
 }
@@ -101,7 +101,7 @@ function loadDeviceInfo() {
     var deviceNetstat = document.getElementById("deviceNetstat");
     var templateName = document.getElementById("templateName");
 
-    fetch(`config.json`)
+    fetch(`./config/config.json`)
         .then((response) => {
             return response.json();
         })
@@ -184,13 +184,14 @@ function restartESP(enableConfirm) {
     if (enableConfirm == true) {
         if (confirm(text) == true) {
             console.log("Neustart");
-            fetch(`/restartESP`)
+            prompt("Neustart.")
+            // fetch(`/restartESP`)
         } else {
             console.log("kein Neustart");
         }
     } else {
         console.log("Neustart");
-        fetch(`/restartESP`)
+        // fetch(`/restartESP`)
     }
 
 }
