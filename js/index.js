@@ -441,7 +441,7 @@ function loadJson() {
       toggleSwitch();
     }
   };
-  xhr.open("GET", "state.json", true);
+  xhr.open("GET", "./config/state.json", true);
   xhr.setRequestHeader("Accept", "application/json");
   xhr.send(null);
 }
@@ -474,7 +474,7 @@ const loadState = () => {
       });
     }
   };
-  xhr.open("GET", "state.json", true);
+  xhr.open("GET", "./config/state.json", true);
   xhr.setRequestHeader("Accept", "application/json");
   xhr.send(null);
 };
