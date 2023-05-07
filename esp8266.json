@@ -1,0 +1,72 @@
+[
+    {
+        "GPIO": "0",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "1",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "2",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "3",
+        "ID": "1",
+        "Input": "Button"
+    },
+    {
+        "GPIO": "4",
+        "ID": "1",
+        "Input": "Switch"
+    },
+    {
+        "GPIO": "5",
+        "ID": "2",
+        "Input": "Switch"
+    },
+    {
+        "GPIO": "9",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "10",
+        "ID": "3",
+        "Input": "Switch"
+    },
+    {
+        "GPIO": "12",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "13",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "14",
+        "ID": "4",
+        "Input": "Switch"
+    },
+    {
+        "GPIO": "15",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "16",
+        "ID": "1",
+        "Input": "None"
+    },
+    {
+        "GPIO": "17",
+        "ID": "1",
+        "Input": "None"
+    }
+]

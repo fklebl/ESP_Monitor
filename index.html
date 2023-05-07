@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="index.js"></script>
+    <title>Temperature Monitor</title>
+</head>
+
+<body class="MainPage">
+    <div id='main'>
+        <h2 id="deviceType">deviceType</h2>
+        <br>
+        <h1 id="deviceName">deviceName</h1>
+        <br>
+        <h3 id="deviceNetstat">deviceNetstat</h3>
+        <br>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td id="P_time">Time</td>
+            </tr>
+            <tr>
+                <td>Temp. Obergeschoss</td>
+                <td><span id='obergeschoss'>--.-</span> &deg;C</td>
+            </tr>
+            <tr>
+                <td>Temp. Erdgeschoss</td>
+                <td><span id='erdgeschoss'>--.-</span> &deg;C</td>
+            </tr>
+            <tr>
+                <td>Temp. Keller</td>
+                <td><span id='keller'>--.-</span> &deg;C</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <br>
+
+        <p>
+            <table id="table">
+
+            </table>
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <!--
+        <p class="p center">
+            <button id="mqttpage" class="button" onclick="window.location.href='mqtt.html'">MQTT</button>
+        </p>
+        -->
+        <p class="p center">
+            <button id="configpage" class="button"
+                onclick="window.location.href='configuration.html'">Configuration</button>
+        </p>
+        <p class="p center">
+            <button id="infopage" class="button" onclick="window.location.href='information.html'">Information</button>
+        </p>
+        <p class="p center">
+            <button id="restartESP" class="button restart" onclick="restartESP(true)">Restart</button>
+        </p>
+        <br>
+        <div style='text-align:right;font-size:11px;'>
+            <hr /><a href='https://www.klebl.info' target='_blank'>TasmoKlebl 2.0 by Florian Klebl</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>Information Monitor</title>
+</head>
+
+<body>
+    <div id='main'>
+        <h2 id="deviceType">deviceType</h2>
+        <br>
+        <h1 id="deviceName">deviceName</h1>
+        <br>
+        <h3 id="deviceNetstat">deviceNetstat</h3>
+        <br>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Programm Version</td>
+                <td id="version">Version</td>
+            </tr>
+            <tr>
+                <td>Build Date & Time</td>
+                <td id="build">Build</td>
+            </tr>
+            <tr>
+                <td>Uptime</td>
+                <td id="uptime">Uptime</td>
+            </tr>
+            <tr>
+                <td>Boot Count</td>
+                <td id="bootCount">Boot Count</td>
+            </tr>
+            <tr>
+                <td>Restart Reason</td>
+                <td id="restartReason">Restart Reason</td>
+            </tr>
+            <tr>
+                <td>Friendly Name</td>
+                <td id="friendlyName">Friendly Name</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SSId (RSSI)</td>
+                <td id="ssid">SSID</td>
+            </tr>
+            <tr>
+                <td>Hostname</td>
+                <td id="hostname">Hostname</td>
+            </tr>
+            <tr>
+                <td>MAC-Address</td>
+                <td id="macaddress">MAC-Address</td>
+            </tr>
+            <tr>
+                <td>IP-Address</td>
+                <td id="ipaddress">IP-Address</td>
+            </tr>
+            <tr>
+                <td>Default Gateway</td>
+                <td id="gateway">Gateway</td>
+            </tr>
+            <tr>
+                <td>Subnet-Mask</td>
+                <td id="subnetmask">Subnet-Mask</td>
+            </tr>
+            <tr>
+                <td>DNS Server</td>
+                <td id="dns">DNS Server</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>MQTT Server</td>
+                <td id="mqttServer">MQTT Server</td>
+            </tr>
+            <tr>
+                <td>MQTT Port</td>
+                <td id="mqttPort">MQTT Port</td>
+            </tr>
+            <tr>
+                <td>MQTT User</td>
+                <td id="mqttUsername">MQTT User</td>
+            </tr>
+            <tr>
+                <td>MQTT ID</td>
+                <td id="mqttId">MQTT ID</td>
+            </tr>
+            <tr>
+                <td>MQTT Topic</td>
+                <td id="mqttTopic">MQTT Topic</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ESP Chip</td>
+                <td id="espChip">ESP Chip</td>
+            </tr>
+            <tr>
+                <td>Flash Size</td>
+                <td id="flashSize">Flash Size</td>
+            </tr>
+            <tr>
+                <td>Program Flash Size</td>
+                <td id="programFlashSize">Program Flash Size</td>
+            </tr>
+            <tr>
+                <td>Program Size</td>
+                <td id="programSize">Program Size</td>
+            </tr>
+            <tr>
+                <td>Free Program Size</td>
+                <td id="freeProgramSpace">Free Program Size</td>
+            </tr>
+            <tr>
+                <td>Free Memory</td>
+                <td id="freeMemory">Free Memory</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <br>
+
+        <p>
+            <button id="mainpage" class="button" onclick="window.location.href='/'">Main Page</button>
+        </p>
+
+        <br>
+        <div style='text-align:right;font-size:11px;'>
+            <hr /><a href='https://www.klebl.info' target='_blank'>TasmoKlebl 1.3.1 by Florian Klebl</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

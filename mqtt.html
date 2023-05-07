@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>MQTT Settings</title>
+</head>
+
+<body>
+    <div id='main'>
+        <h2 id="deviceType">deviceType</h2>
+        <br>
+        <h1 id="deviceName">deviceName</h1>
+        <br>
+        <h3 id="deviceNetstat">deviceNetstat</h3>
+        <br>
+
+        <hr>
+
+        <fieldset>
+            <legend>
+                <p>&nbsp;MQTT parameters &nbsp;</p>
+            </legend>
+            <p>
+                <b>MQTT Server</b><br>
+                <input type="text" id="mqttServer">
+            </p>
+            <p>
+                <b>MQTT Port</b><br>
+                <input type="text" id="mqttPort">
+            </p>
+            <p>
+                <b>MQTT ID</b><br>
+                <input type="text" id="mqttId">
+            </p>
+            <p>
+                <b>MQTT Username</b><br>
+                <input type="text" id="mqttUsername">
+            </p>
+            <p>
+            <div class="parent">
+                <div class="child">
+                    <b>MQTT Password</b>
+                </div>
+                <div class="child">
+                    <input type="checkbox" onclick="togglePwVisibility('mqttPassword')">
+                </div><br>
+                <input type="password" id="mqttPassword">
+            </div>
+            <p>
+                <b>MQTT Topic</b><br>
+                <input type="text" id="mqttTopic">
+            </p>
+            <p>
+                <button type="submit" id="save-mqtt" class="button save" onclick="saveMqtt()">Save</button>
+            </p>
+        </fieldset>
+
+        <hr>
+
+        <br>
+
+        <p>
+            <button id="confpage" class="button"
+                onclick="window.location.href='configuration.html'">Configuration</button>
+        </p>
+        <br>
+        <div style='text-align:right;font-size:11px;'>
+            <hr /><a href='https://www.klebl.info' target='_blank'>TasmoKlebl 2.0 by Florian Klebl</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

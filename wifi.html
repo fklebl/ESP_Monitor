@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>WiFi Settings</title>
+</head>
+
+<body>
+    <div id='main'>
+        <h2 id="deviceType">deviceType</h2>
+        <br>
+        <h1 id="deviceName">deviceName</h1>
+        <br>
+        <h3 id="deviceNetstat">deviceNetstat</h3>
+        <br>
+
+        <hr>
+
+        <fieldset>
+            <legend>
+                <p>&nbsp;WiFi parameters &nbsp;</p>
+            </legend>
+            <p>
+                <b>WIFI SSID</b><br>
+                <input type="text" id="ssid">
+            </p>
+            <p>
+            <div class="parent">
+                <div class="child">
+                    <b>WIFI Password</b>
+                </div>
+                <div class="child">
+                    <input type="checkbox" onclick="togglePwVisibility('wifipassword')">
+                </div><br>
+                <input type="password" id="wifipassword">
+            </div>
+            <p>
+                <b>Hostname</b><br>
+                <input type="text" id="hostname">
+            </p>
+            <br>
+            <div class="parent">
+                <div class="child">
+                    <b>DHCP</b>
+                </div>
+                <div class="child">
+                    <input type="checkbox" id="dhcp" onclick="toggleDHCP()">
+                </div>
+            </div>
+            <hr>
+            </p>
+            <p>
+                <b>IP Address</b><br>
+                <input type="text" id="ipaddress">
+            </p>
+            <p>
+                <b>Subnet-Mask</b><br>
+                <input type="text" id="subnetmask">
+            </p>
+            <p>
+                <b>Gateway</b><br>
+                <input type="text" id="gateway">
+            </p>
+            <p>
+                <b>DNS Server</b><br>
+                <input type="text" id="dns">
+            </p>
+            <p>
+                <button type="submit" id="save-wifi" class="button save" onclick="saveWifi()">Save</button>
+            </p>
+        </fieldset>
+
+        <hr>
+
+        <br>
+
+        <p>
+            <button id="confpage" class="button"
+                onclick="window.location.href='configuration.html'">Configuration</button>
+        </p>
+        <br>
+        <div style='text-align:right;font-size:11px;'>
+            <hr /><a href='https://www.klebl.info' target='_blank'>TasmoKlebl 2.0 by Florian Klebl</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

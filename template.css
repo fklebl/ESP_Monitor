@@ -1,0 +1,320 @@
+body {
+    font-size: 100%;
+    background-color: #252525;
+}
+
+#main {
+    display: table;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    min-width: 370px;
+}
+
+#content {
+    border: 5px solid blue;
+    height: 180px;
+    width: 360px;
+    border-radius: 15px;
+    padding: 10px 0px 10px 0px;
+}
+
+#contentButtons {
+    border: 5px solid red;
+    border-radius: 15px;
+    padding: 10px 0px 10px 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px 5px 0px;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px 5px 0px;
+    font-size: large;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px 5px 0px;
+    font-size: medium;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 80%;
+}
+
+input:read-only {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+    font-size: 80%;
+}
+
+fieldset {
+    background: #4f4f4f;
+}
+
+button {
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #1fa3ec;
+    height: 60px;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0e70a4;
+}
+
+button.save {
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #4bbe68;
+    height: 60px;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+button.save:hover {
+    background: #5aaf6f;
+}
+
+.restart {
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #d43535;
+    height: 60px;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.restart:hover {
+    background: #931f1f;
+}
+
+p {
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px 10px 0px;
+    font-size: 120%;
+}
+
+p.center {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px 10px 0px;
+    font-size: 120%;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #aaa;
+    font-size: 110%;
+}
+
+#time_P {
+    margin: 10px 0px 15px 0px;
+    color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #4f4f4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110%;
+}
+
+tr {
+    text-align: left;
+    color: white;
+    background-color: #4f4f4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110%;
+}
+
+cite {
+    margin: 16px 32px;
+    font-weight: bold;
+}
+
+.red {
+    color:#d43535;
+}
+
+.parent {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 120%;
+}
+
+.child {
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+.state {
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0px 5px 0px;
+    font-size: 170%;
+}
+
+.checkboxbutton {
+    background: #1fa3ec;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 60px;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.checkboxbutton:hover {
+    background: #0e70a4;
+}
+
+.checkboxbutton.red {
+    background: #d43535;
+}
+
+.checkboxbutton.red:hover {
+    background: #931f1f;
+}
+
+.checkboxbutton.yellow {
+    background: yellow;
+    color: black;
+}
+
+.checkboxbutton.yellow:hover {
+    background: gold;
+}
+
+.checkboxbutton.green {
+    background: #4bbe68;
+}
+
+.checkboxbutton.green:hover {
+    background: green;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+select {
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+select:focus {
+    outline: none;
+}
